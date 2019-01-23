@@ -68,7 +68,7 @@ HTTP POST 请求，Content-Type: application/x-www-form-urlencoded
 2. 本地加签方式  
     - Js + WebStocket 
     - JAVA/C#/PHP + WebStocket
-    - JAVA/C# + COM组件
+    - JAVA/C# + COM组件  [JAVA示例](https://blog.csdn.net/qq_28024699/article/details/85099953)  [C#示例](https://github.com/CooperLiu/CustomsReport)
 
 官方提供的加签为JS + WebStocket示例，这种方式比
 
