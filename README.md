@@ -68,10 +68,11 @@ HTTP POST 请求，Content-Type: application/x-www-form-urlencoded
 2. 本地加签方式  
     - Js + WebStocket 
     - JAVA/C#/PHP + WebStocket
-    - JAVA/C# + COM组件  [JAVA示例](https://blog.csdn.net/qq_28024699/article/details/85099953)  [C#示例](https://github.com/CooperLiu/CustomsReport)
+    - JAVA/C# + COM组件  [JAVA示例](https://blog.csdn.net/qq_28024699/article/details/85099953)  [C#示例](https://github.com/CooperLiu/CustomsReport/blob/master/src/Boss.Scm.CustomsReportHost/SDK/SignSdkApi.cs#L34)
 
-官方提供的加签为JS + WebStocket示例，这种方式比
+官方提供的加签为JS + WebStocket示例，这种方式比较绕，需要定期轮询待加签的列表。
 
+建议下 使用COM组件的形式，可以以同步的方式上报数据，结构比较清晰，[示例代码](https://github.com/CooperLiu/CustomsReport/blob/master/src/Boss.Scm.CustomsReportHost/SDK/SignSdkApi.cs#L34)
 ## 企业实时数据获取接口（部署在电商平台）
 
 ## 深坑 海关请求方式
@@ -86,5 +87,9 @@ HTTP POST 请求，Content-Type: application/x-www-form-urlencoded
     > {"code":"10000","message":"XXXX","serviceTime":"1544519952469"}
 
 4. 审核数据为近三天订单数据
+
+5. 通关系统注册接口地址 [互联网+海关](http://customs.chinaport.gov.cn/deskcus/cus/deskIndex?menu_id=cebimp&ticket=ST-832543-KHmT5D0pdNQiIbkZAePE-cas#)
+    > 访问注册地址，需要插入操作人IC卡   
+    > 证书注册时，需要注意证书编号，一定要小写
 
 
